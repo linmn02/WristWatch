@@ -1,0 +1,446 @@
+
+/* 联系 */
+.contact{
+    background: url('../images/contact-bg1.png')no-repeat 100% 100%;
+    padding: 5em 0em;
+    .top{
+        text-align: center;
+        padding: 2em 0em;
+        .describe{
+            font-size: 2.5em;
+            color: #dcdcdc;
+        }
+        .title{
+            font-size: 2em;
+            color: #555555;
+            font-weight: bold;
+        }
+        .info{
+            padding: 0em 2em;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 0em;
+        .list{
+            width: 30%;
+            text-align: center;
+            padding: 0em 2em;
+            .title{
+                font-size: 1.8em;
+                color: #5f5f5f;
+                padding-bottom: 1em;
+            }
+            .info,p{
+                font-size: 1em;
+                color: #abaaa9;
+            }
+        }
+    }
+    @media screen and(max-width:740px) {
+        &{
+            .top{
+                .info{
+                    padding: 0em 1em;
+                }
+            }
+            .bottom{
+                .list{
+                    padding: 0em 1em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:650px) {
+        &{
+            .top{
+                .info{
+                    font-size: .8em;
+                }
+            }
+            .bottom{
+                .list{
+                    .title{
+                       font-size: 1.5em; 
+                    }
+                    .info,p{
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:580px) {
+        &{
+            .top{
+                .title{
+                    font-size: 1.5em;
+                }
+                .info{
+                    height: 100px;
+                    overflow-y: scroll;
+                }
+            }
+            .bottom{
+                display: block;
+                .list{
+                    width: 100%;
+                    padding: 1em;
+                    .title{
+                       font-size: 1.5em; 
+                       padding-bottom: 0em;
+                    }
+                    .info,p{
+                        font-size: 1.2em;
+                        // overflow: hidden;
+                        // white-space: nowrap;
+                        // text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:450px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 2em;
+                }
+            }
+            .bottom{
+                .list{
+                    .title{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:350px) {
+        &{
+            .top{
+                padding: 0em;
+                .describe{
+                    font-size: 1.3em;
+                }
+                .title{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+/* store门店 */
+.store{
+    padding: 5em 0em;
+    background: #f7f7f7;
+    .top{
+        padding-bottom: 2em;
+        text-align: center;
+        .describe{
+            font-size: 2.5em;
+            color: #dcdcdc;
+        }
+        .title{
+            font-size: 2em;
+            color: #555555;
+            font-weight: bold;
+        }
+    }
+    .bottom{
+        padding: 2em 0em;
+        display: flex;
+        .left{
+            width: 50%;
+            text-align: left;
+            padding-top: 1em ;
+            .item{
+                padding-bottom: 1em;
+                padding-left: 6em;
+                
+                .name{
+                    font-size: 1.5em;
+                    color: #828282;
+                }
+                .tel,.address{
+                    font-size: 1.2em;
+                    color: #a0a0a0;
+                }
+            }
+        }
+        .right{
+            .image{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }   
+            }
+           
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &{
+            .bottom{
+                .left{
+                    width: 66%;
+                   .item{
+                       padding-left: 4em;
+                       .name{
+                        font-size: 1.3em;
+                    }
+                        .tel,.address{
+                            font-size: 1em;
+                        }
+                   }
+                   
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &{
+            .bottom{
+                .left{
+                    width: 80%;
+                    padding-top: 0em;
+                    .item{
+                        padding-bottom: .5em;
+                        .name{
+                            font-size: .8em;
+                        }
+                        .tel,.address{
+                            font-size: .5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:660px) {
+        &{
+            .bottom{
+                display: block;
+                .left{
+                    width: 100%;
+                    text-align: center;
+                    .item{
+                        padding: 0em;
+                        padding-bottom: 1em;
+                        .name{
+                            font-size: 1.5em;
+                        }
+                        .tel,.address{
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .right{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:450px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 2em;
+                }
+                .title{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:350px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 1.5em;
+                }
+                .title{
+                    font-size: 1.2em;
+                }
+            }
+            .bottom{
+                .left{
+                    .item{
+                        .name{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brand{
+    position: relative;
+    width: 100%;
+    // height: 448px;
+    .bg{
+    // position: absolute;
+        img{
+            width: 100%;
+
+        }        
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        .title{
+            font-size: 3em;
+            color: #fff;
+        }
+        .info{
+            font-size: 1.5em;
+            color: #fff;
+            font-family: OSLight;
+        }
+        .more{
+            width: 10em;
+            height: 3em;
+            border: 1px solid #fff;
+            line-height: 3em;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 4em;
+            transition: all .3s linear;
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 5px 10px 12px #ccc;
+            }
+            a{
+                color: #fff;
+                font-size: 2em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        .content{
+            top: 18%;
+            .more{
+                margin-top: 2.5em;
+            }
+        }
+    }
+
+    @media screen and(max-width:900px) {
+        .content{
+            top: 15%;
+            .title{
+                font-size: 2em;
+            }
+            
+            .more{
+                height: 2.5em;
+                width: 8em;
+                line-height: 2.5em;
+                margin-top: 1.8em;
+                a{
+                font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:770px) {
+        &{
+            .content{
+                // top: 10%;
+                .title{
+                    font-size: 1.8em;
+                }
+                .info{
+                    font-size: 1.3em;
+                }
+                .more{
+                    margin-top: 1em;
+                    a{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:600px) {
+        &{
+            .content{
+                top: 10%;
+                .info{
+                    font-size: 1em;
+                }
+                .more{
+                    height: 2em;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:500px) {
+        &{
+            .content{
+                top: 8%;
+                .title{
+                    font-size: 1.2em;
+                }
+                .info{
+                    width: 80%;
+                    margin: 0 auto;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: .8em;
+                }
+
+                .more{
+                    width: 6em;
+                    height: 1.5em;
+                    line-height: 1.5em;
+                    margin-top: .6em;
+                    a{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:370px) {
+        &{
+            .content{
+                top: 5%;
+                .title{
+                    font-size: 1em;
+                }
+                .more{
+                    margin-top: .3em;
+                }
+            }
+        }
+    }
+}

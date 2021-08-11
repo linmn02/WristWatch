@@ -1,0 +1,358 @@
+/* banner */
+.banner{
+    position: relative;
+    .content{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        color: #fff;
+        padding: 10em 0em;
+        z-index: 1000;
+        .title{
+            font-size: 3em;
+            font-weight: lighter;
+        }
+        .describe{
+            font-size: 2em;
+            font-family: OSLight;
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &{
+            .content{
+                padding: 8em 0em;
+            }
+        }
+    }
+
+    @media screen and(max-width:950px) {
+        &{
+            .content{
+                padding: 6em 0em;
+            }
+        }
+    }
+
+    @media screen and(max-width:750px) {
+        &{
+            .content{
+                padding: 5em 0em;
+                .title{
+                    font-size: 2em;
+                }
+                .describe{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:550px) {
+        &{
+            .content{
+                padding: 3em 0em;
+            }
+        }
+    }
+    @media screen and(max-width:450px) {
+        &{
+            .content{
+                padding: 2em 0em;
+                .title{
+                    font-size: 1.5em;
+                }
+                .describe{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+/* selection */
+.selection{
+    background-color: #f7f7f7;
+    .product{
+        padding: 5em 0em;
+        .top{
+            text-align: center;
+            .describe{
+                font-size: 2.5em;
+                color: #dcdcdc;
+            }
+            .title{
+                font-size: 2em;
+                color: #555555;
+                font-weight: bold;
+            }
+        }
+        .bottom{
+            user-select: none;
+            .watchtlist{
+                padding: 3em 0em;
+                height: 1000px;
+                position: relative;
+                & .listing:nth-of-type(1){
+                    opacity: 1;
+                }
+                .listing{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    position: absolute;
+                    opacity: 0;
+                
+                    .item{
+                        width: 32%;
+                        text-align: center;
+                        background: #eaeaea;
+                        padding: 2em 0em;
+                        margin-bottom: 2em;
+                        .icon{
+                            img{
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                        .content{
+                            .title{
+                                font-size: 1.3em;
+                                padding: .5em 0em;
+                            }
+                            .info{
+                                font-size:1em;
+                                padding: .5em 0em;
+                            }
+                            .price{
+                                font-size: 1em;
+                                color: #666666;
+                            }
+                        }
+                    }
+                }
+            
+            }
+            #btnlist{
+                text-align: center;
+                 
+                 span,div{
+                     cursor: pointer;
+                     display: inline-block;
+                     width: 30px;
+                     height: 30px;
+                     line-height: 30px;
+                     border-radius: 100px;
+                     background: #efefef;
+                     text-align: center;
+                 }
+
+                 .active{
+                     color: #fff;
+                     background: #919191;
+                 }
+             }
+        }
+    }
+    /* introduce */
+    .introduce{
+        padding: 5em 0em;
+        .top{
+            text-align: center;
+            padding: 1em 0em;
+            span{
+                font-size: 2em;
+            }
+            .describe{
+                color: #bebebe;
+            }
+            .info{
+                padding: 1em 0em;
+                font-size: 1.2em;
+                
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            padding: 0em 6em;
+            .images{
+                width: 23%;
+            }
+        }
+    }
+
+    @media screen and(max-width:1000px) {
+        &{
+            .product{
+                .bottom{
+                    .watchtlist{
+                        .listing{
+                           .item{
+                            .content{
+                                .info{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    padding: 0em .5em;
+                                }
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+            .introduce{
+                .bottom{
+                    padding: 0em 3em;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:700px){
+        &{
+            .introduce{
+                padding: 0em;
+                .top{
+                    .info{
+                        padding: 0em 2em;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:600px) {
+        &{
+            .product{
+                .bottom{
+                    .watchtlist{
+                        height: 1450px;
+                        .listing{
+                            .item{
+                                width: 48%;
+                            }
+                        }
+                    }
+                }
+            }
+            .introduce{
+                .top{
+                    span{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:420px) {
+        &{
+            .product{
+                .top{
+                    .describe{
+                        font-size: 1.5em;
+                    }
+                    .title{
+                        font-size: 1.5em;
+                    }
+                }
+                .bottom{
+                    .watchtlist{
+                        height: 1400px;
+                        .listing{
+                            .item{
+                                .title{
+                                font-size:.8em ;
+                                }
+                                .info{
+                                    font-size: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .introduce{
+                .top{
+                    span{
+                        font-size: 1.2em;
+                    }
+                    .info{
+                        font-size: .4em;
+                    }
+                }
+                .bottom{
+                    padding: 0em 2em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:390px) {
+        &{
+            .product{
+                .bottom{
+                    .watchtlist{
+                        height: 1330px;
+                        .listing{
+                            .item{
+                                margin-bottom: 1em;
+                                .title{
+                                font-size:.8em ;
+                                }
+                                .info{
+                                    font-size: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .introduce{
+                .top{
+                    span{
+                        font-size: 1em;
+                    }
+
+                }
+            }
+        }
+    }
+    @media screen and(max-width:375px) {
+        &{
+            .product{
+                .bottom{
+                    .watchtlist{
+                        height: 1280px;
+                        .listing{
+                            .item{
+                                margin-bottom: .5em;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:320px) {
+        &{
+            .product{
+                .bottom{
+                    .watchtlist{
+                        height: 1150px;
+                        .listing{
+                            .item{
+                                margin-bottom: .5em;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

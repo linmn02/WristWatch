@@ -1,0 +1,403 @@
+body{
+    background: #f7f7f7;
+}
+/* story故事 */
+.story{
+    padding: 5em 0em;
+    .top{
+        text-align: center;
+        padding: 2em 0em;
+        .describe{
+            font-size: 2.5em;
+            color: #dcdcdc;
+        }
+        .title{
+            font-size: 2em;
+            color: #555555;
+            font-weight: bold;
+        }
+        .info{
+            padding: 0em 3em;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+    .bottom{
+        display: flex;
+
+        .left{
+            padding-right: 2em;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .right{
+            .topimg{
+                padding-bottom: 2em;
+            }
+            .bottomimg{
+                display: flex;
+                justify-content: space-between;
+                .images{
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:900px) {
+        &{
+            .top{
+                .info{
+                    font-size: .6em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:600px) {
+        &{
+            .top{
+                .title{
+                    font-size: 1.5em;
+                }
+                .describe{
+                    font-size: 2em;
+                }
+                .info{
+                    padding:0em 4em ;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .bottom{
+                .left{
+                    padding-right: 1em;
+                }
+                .right{
+                    .topimg{
+                        padding-bottom:1em ;
+                    }
+                    .bottomimg{
+                        .images{
+                            width: 49%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:375px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+/* process工艺 */
+.process{
+    .top{
+        display: flex;
+        height: 420px;
+        .left{
+           img{
+               width: 100%;
+            //    height: 100%;
+           }
+        }
+        .right{
+            width: 125%;
+            padding: 1em 2em;
+            .content{
+                padding-bottom: 3em;
+                .describe{
+                    font-size: 2.5em;
+                    color: #bebebe;
+                }
+                .title{
+                    font-size: 2em;
+                    color: #555555;
+                }
+            }
+            .info{
+                width: 100%;
+                height: 15em;
+                background: #8f9094;
+                padding: 1em 2em;
+                color: #fff;
+                font-size: 1em;
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        height: 420px;
+        .left{
+            width: 125%;
+            padding: 1em 2em;
+            .content{
+                padding-bottom: 3em;
+                .describe{
+                    font-size: 2.5em;
+                    color: #bebebe;
+                }
+                .title{
+                    font-size: 2em;
+                    color: #555555;
+                }
+            }
+            .info{
+                width: 100%;
+                height: 15em;
+                background: #8f9094;
+                padding: 1em 2em;
+                color: #fff;
+                font-size: 1em;
+            }
+        }
+        .right{
+            img{
+                width: 100%;
+             //    height: 100%;
+            }
+        }
+    }
+    @media screen and(max-width:1000px) {
+        &{
+            .top{
+                height: 400px;
+                .right{
+                    .content{
+                        .describe{
+                            font-size: 1.8em;
+                        }
+                    }
+                    .info{
+                        height: 10em;
+                        overflow-y: scroll;
+                    }
+                }
+            }
+            .bottom{
+                height: 400px;
+                .left{
+                    .content{
+                        .describe{
+                            font-size: 1.8em;
+                        }
+                    }
+                    .info{
+                        height: 10em;
+                        overflow: scroll;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:700px) {
+        &{
+            .top{
+                display: block;
+                position: relative;
+                padding-bottom: 2em;
+                height: 300px;
+                .left{
+                    display: none;
+                }
+                .right{
+                    position: absolute;
+                    top: 0;
+
+                    .content{
+                        width: 100%;
+                        height: 100%;
+                        // text-align: center;
+                        line-height: 100%;
+                        padding-bottom: 1em;
+                        .title{
+                            padding: 1em 0em;
+                        }
+                    }
+                    .info{
+                        width: 80%;
+                        // overflow: inherit;
+                    }
+                }
+            }
+
+            .bottom{
+                display: block;
+                position: relative;
+                padding-bottom: 2em;
+                height: 300px;
+                .right{
+                    display: none;
+                }
+                .left{
+                    position: absolute;
+                    top: 0;
+
+                    .content{
+                        width: 100%;
+                        height: 100%;
+                        // text-align: center;
+                        line-height: 100%;
+                        padding-bottom: 1em;
+                        .title{
+                            padding: 1em 0em;
+                        }
+                    }
+                    .info{
+                        width: 80%;
+                        // overflow: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* stylist设计师 */
+.stylist{
+    padding: 3em 0em 1em;
+    .top{
+        padding-bottom: 2em;
+        text-align: center;
+        .describe{
+            font-size: 2.5em;
+            color: #dcdcdc;
+        }
+        .title{
+            font-size: 2em;
+            color: #555555;
+            font-weight: bold;
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        .list{
+           
+            width: 30%;
+            // padding: 0em 2em;
+
+            .image{
+                img{
+                    width: 100%;
+                }
+            }
+            .content{
+                padding-top: 1em;
+                text-align: center;
+                .name{
+                    font-size: 1.5em;
+                    padding-bottom: 1em;
+                    font-weight: bold;
+                }
+                .info{
+                    font-size: 1em;
+                    padding: 0em 1em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &{
+            .bottom{
+                .list{
+                    .content{
+                        .info{
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:660px) {
+        &{
+            .bottom{
+                .list{
+                    .content{
+                        .name{
+                            padding-top: 1em;
+                        }
+                        .info{
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:600px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 2em;
+                }
+                .title{
+                    font-size: 2em;
+                }
+            }
+            .bottom{
+                display: block;
+                .list{
+                    display: flex;
+                    width: 100%;
+                    padding: 2em 0em;
+                    .content{
+                        width: 100%;
+                        text-align: left;
+                        padding: 0em 1em;
+                        .name{
+                            font-size: 1.5em;
+                        }
+                        .info{
+                            padding: 0em;
+                            padding-right: 1 em;
+                            padding-top: 3em;
+                            white-space: pre-wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:380px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 1.5em;
+                }
+                .title{
+                    font-size: 1.5em;
+                }
+            }
+            .bottom{
+                .list{
+                    padding: 1em 0em;
+                    .content{
+                        .name{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

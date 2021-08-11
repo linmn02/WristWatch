@@ -1,0 +1,664 @@
+/* banner */
+.banner{
+    position: relative;
+    .content{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        color: #52525b;
+        padding: 10em 0em;
+        z-index: 1000;
+        .title{
+            font-size: 3em;
+            font-weight: lighter;
+        }
+        .describe{
+            font-size: 2em;
+            font-family: OSLight;
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &{
+            .content{
+                padding: 8em 0em;
+            }
+        }
+    }
+
+    @media screen and(max-width:950px) {
+        &{
+            .content{
+                padding: 6em 0em;
+            }
+        }
+    }
+
+    @media screen and(max-width:750px) {
+        &{
+            .content{
+                padding: 5em 0em;
+                .title{
+                    font-size: 2em;
+                }
+                .describe{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:550px) {
+        &{
+            .content{
+                padding: 3em 0em;
+            }
+        }
+    }
+    @media screen and(max-width:450px) {
+        &{
+            .content{
+                padding: 2em 0em;
+                .title{
+                    font-size: 1.5em;
+                }
+                .describe{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+/* maintain保养 */
+.maintain{
+    padding: 3em 0em;
+    background: #f7f7f7;
+    .top{
+        text-align: center;
+        padding: 2em 0em;
+        .describe{
+            font-size: 2.5em;
+            color: #dcdcdc;
+        }
+        .title{
+            font-size: 2em;
+            color: #555555;
+            font-weight: bold;
+        }
+        .info{
+            padding: 0em 2em;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+    .bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .list{
+            width: 30%;
+            padding: 1em 0em;
+            position: relative;
+            // transition: all .3s linear;
+            .image{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &:hover .content{
+                // display: block;
+                opacity: 1;
+            }
+            .content{
+                width: 100%;
+                height: 80px;
+                background: #fff;
+                position: absolute;
+                bottom: 4%;
+                text-align: center;
+                // display: none;
+                opacity: 0;
+                transition: all .3s linear;
+               
+                .title{
+                    padding-top: 1.5em;
+                    font-size: 1.2em;
+                }
+                .info{
+                    font-size: 1.2em;
+                }
+                
+            }
+        }
+    }
+    @media screen and(max-width:800px) {
+        &{
+            .bottom{
+                .list{
+                    .content{
+                        .title{
+                            // padding-top: 1em;
+                            font-size: 1em;
+                        }
+                        .info{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:600px) {
+        &{
+            .top{
+                .title{
+                     font-size: 1.5em;                }
+            }
+            .bottom{
+               
+                .list{
+                   width: 45%;
+                    
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:450px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 1.5em;
+                }
+            }
+            .bottom{
+                .list{
+                    .content{
+                        .title{
+                            padding-top: 1.5em;
+                            font-size: .8em;
+                        }
+                        .info{
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:350px) {
+        &{
+            .bottom{
+                .list{
+                    width: 47%;
+                    .content{
+                        .title{
+                            padding-top: 2em;
+                            font-size: .6em;
+                        }
+                        .info{
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* news新闻 */
+.news{
+    background: #f7f7f7;
+    padding: 3em 0em;
+    .top{
+        text-align: center;
+        padding: 0em 0em 2em;
+        .describe{
+            font-size: 2.5em;
+            color: #dcdcdc;
+        }
+        .title{
+            font-size: 2em;
+            color: #555555;
+            font-weight: bold;
+        }
+        .info{
+            padding: 0em 2em;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+
+    .bottom{
+        .watchtlist{
+            padding-bottom: 2em;
+            .listing{
+                .item{
+                    display: flex;
+                    padding: 2em 0em;
+                    border-bottom: 2px solid #e7e7e7;
+                    .icon{
+                        width: 50%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .content{
+                        width: 60%;
+                        padding: 1em;
+                        .title{
+                            font-size: 1.5em;
+                            padding-bottom: 1.5em;
+                        }
+                        .info{
+                            font-size: 1.2em;
+                            padding-bottom: 1em;
+                            color: #acacac;
+                        }
+                        .morelist{
+                            .time{
+                                font-size: 1.2em;
+                                padding-right: 3em;
+                            }
+                            .more{
+                                display: inline-block;
+                                width: 6em;
+                                height: 2em;
+                                line-height: 2em;
+                                text-align: center;
+                                border: 1px solid #ccc;
+                                transition: all .3s linear;
+                                &:hover{
+                                    transform: rotateY(-2px);
+                                    box-shadow: 5px 8px 10px #ccc;
+                                }
+                                a{
+                                    font-size:1.2em;
+                                    color: #acacac;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // #btnlist{
+        //     text-align: center;
+             
+        //      span,div{
+        //          cursor: pointer;
+        //          display: inline-block;
+        //          width: 30px;
+        //          height: 30px;
+        //          line-height: 30px;
+        //          border-radius: 100px;
+        //          background: #efefef;
+        //          text-align: center;
+        //      }
+
+        //      .active{
+        //          color: #fff;
+        //          background: #919191;
+        //      }
+        //  }
+    }
+
+    @media screen and(max-width:1000px) {
+        &{
+            .bottom{
+                .watchtlist{
+                    .listing{
+                        .item{
+                            .content{
+                                padding: .5em 1em;
+                                .title{
+                                    font-size: 1.2em;
+                                    padding-bottom: .3em;
+                                }
+                                .info{
+                                    font-size: 1em;
+                                    padding-bottom: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:700px) {
+        &{
+            .bottom{
+                .watchtlist{
+                    .listing{
+                        .item{
+                            .content{
+                                .info{
+                                    overflow-y: scroll;
+                                    height: 80px;
+                                    font-size: .8em;
+                                
+
+                                }
+                                .morelist{
+                                    padding-top: .5em;
+                                    .time{
+                                        font-size: 1em;
+                                    }
+                                    .more{
+                                        a{
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:600px) {
+        &{
+            .top{
+                .title{
+                    font-size: 1.5em;
+                }
+            }
+            .bottom{
+                .watchtlist{
+                    .listing{
+                        .item{
+                            .icon{
+                                width: 60%;
+                            }
+                            .content{
+                               .title{
+                                   font-size: .8em;
+                               }
+                                .morelist{
+                                    padding-top: .5em;
+                                    .time{
+                                        font-size: .8em;
+                                    }
+                                    .more{
+                                        a{
+                                            font-size: .8em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:550px) {
+        &{
+            .bottom{
+                .watchtlist{
+                    .listing{
+                        .item{
+                            display: block;
+                            width: 100%;
+                            position: relative;
+                            padding: 0;
+                            margin-bottom: 2em;
+                            overflow: hidden;
+                            .icon{
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            &:hover .content{
+                                left: 0;
+                            }
+                            .content{
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(0, 0, 0, 0.5);
+                                position: absolute;
+                                top: 0;
+                                left: -100%;
+                                text-align: center;
+                                padding: 2em;
+                                transition: all .3s linear;
+                                .title{
+                                    font-size: 1.5em;
+                                    color: #fff;
+                                }
+                                .info{
+                                    height: 100px;
+                                    font-size: 1.2em;
+                                    color: #fff;
+                                }
+                                .morelist{
+                                    margin-top: 1em;
+                                    .time{
+                                        font-size: 1.2em;
+                                        color: #fff;
+                                    }
+                                    .more{
+                                        a{
+                                            font-size: 1.2em;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:450px) {
+        &{
+            .top{
+                .describe{
+                    font-size: 1.5em;
+                }
+            }
+            .bottom{
+                .watchtlist{
+                    .listing{
+                        .item{
+                            .content{
+                                padding: 2em ;
+                                .title{
+                                    font-size: 1.2em;
+                                }
+                                .info{
+                                    height: 80px;
+                                    font-size: 1em;
+                                }
+                                .morelist{
+                                    margin-top: 1em;
+                                    .time{
+                                        font-size: 1.2em;
+                                        color: #fff;
+                                    }
+                                    .more{
+                                        a{
+                                            font-size: 1.2em;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:385px) {
+        &{
+            .bottom{
+                .watchtlist{
+                    .listing{
+                        .item{
+                            .content{
+                                padding: 1.5em ;
+                                .title{
+                                    font-size: 1em;
+                                }
+                                .info{
+                                    height: 60px;
+                                    font-size: .81em;
+                                }
+                                .morelist{
+                                    margin-top: .5em;
+                                    .time{
+                                        font-size: 1em;
+                                        padding-right: 2em;
+                                    }
+                                    .more{
+                                        a{
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brand{
+    position: relative;
+    width: 100%;
+    .bg{
+        img{
+            width: 100%;
+
+        }        
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        .title{
+            font-size: 3em;
+            color: #fff;
+        }
+        .more{
+            width: 10em;
+            height: 3em;
+            border: 1px solid #fff;
+            line-height: 3em;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 1em;
+            transition: all .3s linear;
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 5px 10px 12px #ccc;
+            }
+            a{
+                color: #fff;
+                font-size: 2em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        .content{
+            top: 14%;
+            .more{
+                margin-top: .5em;
+            }
+        }
+    }
+
+    @media screen and(max-width:900px) {
+        .content{
+            top: 15%;
+            .title{
+                font-size: 2em;
+            }
+            
+            .more{
+                height: 2.5em;
+                width: 8em;
+                line-height: 2.5em;
+                margin-top: 1em;
+                a{
+                font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:770px) {
+        &{
+            .content{
+                .title{
+                    font-size: 1.8em;
+                }
+                .more{
+                    margin-top: 0em;
+                    a{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:600px) {
+        &{
+            .content{
+                top: 10%;
+                .more{
+                    height: 2em;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:500px) {
+        &{
+            .content{
+                top: 6%;
+                .title{
+                    font-size: 1.2em;
+                }
+                .more{
+                    width: 6em;
+                    height: 1.5em;
+                    line-height: 1.5em;
+                    a{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:370px) {
+        &{
+            .content{
+                top: 5%;
+                .title{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

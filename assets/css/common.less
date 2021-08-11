@@ -1,0 +1,159 @@
+/* 头部 */
+.header{
+    // background-color:transparent;
+    background: #fff;
+    position: sticky;
+    top:0;
+    left:0;
+    padding:1em 0em;
+    width:100%;
+    z-index:100000;
+    transition: all .5s linear;
+    .navbar-default{
+        // background-color:transparent;
+        background: #fff;
+        border:0px;
+        border-radius: 0px;
+        margin: 0;
+        
+        .navbar-header{
+            .navbar-brand{
+                font-size: 1.2em;
+                font-family:OSBold ;
+                text-transform: uppercase;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                li{
+                    a{
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        margin-right: 1em;
+                        border-bottom: 3px dotted transparent;
+                        transition:all linear .3s;
+                        &:hover{
+                            border-bottom: 3px dotted #c5c0c0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px){
+        &{
+            .navbar-default{
+                .navbar-collapse{
+                    li{
+                        a{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 底部 */
+.footer{
+    background-color:#f7f7f7;
+    padding:3em 0em;
+    
+    .list{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        li{
+            a{
+                color: #bbb;
+                font-size: 1.5em;
+                // font-weight: bold;
+                transition: all .3s linear;
+
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+    .box{
+        padding-top: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
+        .copyright{
+            font-family: OSLight;
+            color: #000;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            span{
+                font-family: OSBold;
+            }
+        }
+        .linklist{
+            display: flex;
+            justify-content: space-around;
+            width: 25%;
+
+            a{
+                border: 3px solid #b2b2b2;
+                border-radius: 100px;
+                transition: all.3s linear;
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    transform: translateY(-10px);
+                    box-shadow: 4px 10px 12px #bbb;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1000px){
+        .box{
+
+            .linklist{
+                a{
+                    margin: 0em .5em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:800px){
+        .list{
+            li{
+                a{
+                    font-size: 1em;
+                }
+            }
+        }
+        .box{
+            flex-wrap: wrap;
+
+            .copyright{
+                width:100%;
+                margin-bottom:3em;
+                text-align: center;
+            }
+
+            .linklist{
+                width:100%;
+            }
+        }
+    }
+    @media screen and(max-width:500px) {
+        &{
+            .list{
+                display: none;
+            }
+        }
+    }
+}
+
